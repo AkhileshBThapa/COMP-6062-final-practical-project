@@ -1,0 +1,73 @@
+html, body {
+    height: 100%; 
+    margin: 0;
+}
+
+/* Style for body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* Style for header */
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px; /* Adjust padding as needed */
+}
+
+/* Style for main content */
+main {
+    flex: 1; 
+    margin: 300px; 
+}
+
+section {
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #f8f9fa; 
+}
+
+/* Style for footer */
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px; 
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+.mycontent {
+    padding: 100px; 
+    margin: auto; 
+    max-width: 100%; 
+}
+
+/* Media Query for tablets and smaller devices */
+@media (max-width: 768px) {
+    #random-fact, #dictionary, #weather {
+        padding: 10px;
+    }
+
+    .col-md-8, .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 576px) {
+    header, footer {
+        font-size: 0.875rem;
+    }
+
+    section {
+        padding: 8px;
+    }
+}
